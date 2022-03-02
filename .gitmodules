@@ -1,0 +1,3 @@
+[submodule "extern/sawyer_video_demonstrations"]
+	path = extern/sawyer_video_demonstrations
+	url = https://github.com/AssistiveRoboticsUNH/sawyer_video_demonstrations.git
