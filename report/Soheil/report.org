@@ -1,0 +1,35 @@
+#+title: CS-933 Project Report
+
+* Description
+In this project we are looking for the human to robot join mapping from a
+visual demonstration. A demonstration from a human is provided to the system. We
+are also given a URDF file, in which the robot joint configuration is
+specified. We are looking for a mapping between the human body and the robot
+configuration, given the fact that the morphology of human demonstrator is not
+the same as the robot.
+
+In particular, we are interested into solving the /Inverse Kinematics/ problem,
+not analytically or using existing algorithms, but by using visual data and find
+the best mapping between the human demonstrator's joint, and the robot's
+joint. Inverse Kinematics is the problem of finding the robot's joints state
+(angle and position) by knowing the position of the end-effector.
+
+A component of this mapping is a Reinforcement Learning method that finds the
+best reward function that can guide the robotic manipulator through a desirable
+path and leads it to a goal point.
+
+** Given Data
+A stream of 13 points position that represent the upper body. 
+
+** Expected Output
+A stream of robot's joints position and velocity.
+
+** Evaluation Method
+Whether the manipulator follows the task that the human demonstrator intends or not.
+
+* Tasks
+** TODO How RL is going to be incorporated into the project, other than as an agent that defines a reward function
+** TODO Installing ROS
+** TODO Preparing the data recording system
+** TODO Getting the stream of 3D poses of 13 points
+** TODO Reading the input data, and visualization of them
