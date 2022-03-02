@@ -28,8 +28,12 @@ A stream of robot's joints position and velocity.
 Whether the manipulator follows the task that the human demonstrator intends or not.
 
 * Tasks
-** TODO How RL is going to be incorporated into the project, other than as an agent that defines a reward function
-** TODO Installing ROS
-** TODO Preparing the data recording system
-** TODO Getting the stream of 3D poses of 13 points
-** TODO Reading the input data, and visualization of them
+- [ ] How RL is going to be incorporated into the project, other than as an agent that defines a reward function
+- [ ] Installing ROS
+- [ ] Preparing the data recording system
+- [ ] Getting the stream of 3D poses of 13 points
+- [ ] Reading the input data, and visualization of them
+- [ ] Reading Paul's paper
+- [ ] Reading SAC
+- [ ] Reading SAC's blog
+- [ ] Writing the problem description in the git repo
