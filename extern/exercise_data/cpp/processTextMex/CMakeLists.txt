@@ -1,0 +1,37 @@
+set(TARGET process_txt)
+
+if (NOT CMAKE_BUILD_TYPE OR CMAKE_BUILD_TYPE STREQUAL "")
+SET(CMAKE_BUILD_TYPE "RelWithDebInfo")
+endif()
+
+
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+INCLUDE_DIRECTORIES(${MATLAB_INCLUDE_DIR})
+
+add_library(${TARGET} SHARED process_txt.cpp ${CMAKE_SOURCE_DIR}/Matlabdef.def)
+
+add_definitions(-std=c++17)
+
+target_link_libraries(${TARGET}
+					${MATLAB_LIBRARIES})
+
+if(WIN32)
+    SET_TARGET_PROPERTIES(${TARGET} PROPERTIES SUFFIX .mexw64)
+else(WIN32)
+    if (CMAKE_SIZEOF_VOID_P MATCHES "8")
+        SET_TARGET_PROPERTIES(${TARGET} PROPERTIES SUFFIX .mexa64 PREFIX "")
+    else(CMAKE_SIZEOF_VOID_P MATCHES "8")
+        SET_TARGET_PROPERTIES(${TARGET} PROPERTIES SUFFIX .mexglx PREFIX "")
+    endif (CMAKE_SIZEOF_VOID_P MATCHES "8")
+endif(WIN32)
+
+#SET_TARGET_PROPERTIES(${TARGET}
+#        PROPERTIES
+#        CUDA_SEPERABLE_COMPILATION ON
+#LINKER_LANGUAGE CUDA)
+
+install(TARGETS ${TARGET} DESTINATION D:/NSFExercise/mex)
+
+message(Done!!! ${TARGET})
+
+add_executable(process_txtTest process_txtCPP.cpp)
