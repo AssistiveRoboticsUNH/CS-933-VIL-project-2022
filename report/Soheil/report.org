@@ -18,6 +18,7 @@ A component of this mapping is a Reinforcement Learning method that finds the
 best reward function that can guide the robotic manipulator through a desirable
 path and leads it to a goal point.
 
+
 ** Given Data
 A stream of 13 points position that represent the upper body. 
 
@@ -26,14 +27,30 @@ A stream of robot's joints position and velocity.
 
 ** Evaluation Method
 Whether the manipulator follows the task that the human demonstrator intends or not.
+The robots that our algorithm will be tested on are Sawyer and Yumi. 
+
+* Reinforcement Learning for Inverse Kinematics
+In this section we study how we can formulate the inverse kinematics problem in
+a multi dimensional 
+** Reinforcement Learning
+*** What type of RL algorithm do we need for this project? Why?
+*** Soft Actor-Critic (SAC)
+SAC is an off-policy RL algorithm that maximizes the entropy regularized
+expected return using deep networks. The algorithm is developed to be used for
+continuous action space. SAC employs a stable stochastic actor-critic
+formulation that adds a layer of stochasticity to DDPG-style approaches. As a
+result of this added entropy, we have a better exploration in the environment. 
+
 
 * Tasks
-- [ ] How RL is going to be incorporated into the project, other than as an agent that defines a reward function
+- [X] Writing the problem description in the git repo
+- [X] Collecting demonstration
 - [ ] Installing ROS
 - [ ] Preparing the data recording system
 - [ ] Getting the stream of 3D poses of 13 points
 - [ ] Reading the input data, and visualization of them
 - [ ] Reading Paul's paper
-- [ ] Reading SAC
-- [ ] Reading SAC's blog
-- [ ] Writing the problem description in the git repo
+- [ ] How RL is going to be incorporated into the project, other than as an agent that defines a reward function
+- [ ] Reading [[http://proceedings.mlr.press/v80/haarnoja18b/haarnoja18b.pdf][SAC]]
+- [X] Reading [[https://medium.com/analytics-vidhya/learning-to-walk-using-reinforcement-learning-4e237aaf64a0][SAC's blog]]
+- [X] Implementing SAC and recording a video
