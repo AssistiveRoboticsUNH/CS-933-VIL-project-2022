@@ -1,0 +1,43 @@
+argv[0]=
+argv[0]=
+pybullet build time: Dec 10 2021 16:29:52
+2022-03-08 13:26:27.188070: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.211470: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.211570: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.211924: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 13:26:27.213392: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.213481: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.213545: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.441487: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.441603: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.441676: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 13:26:27.441755: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2157 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Ti Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+2022-03-08 13:26:27.442055: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+  0%|                                                                      | 0/100000 [00:00<?, ?it/s]2022-03-08 13:26:27.958444: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+
+
+
+
+
+
+
+  0%|                                                          | 30/100000 [00:16<15:02:42,  1.85it/s]
+Traceback (most recent call last):
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 364, in <module>
+    agent.learn()
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 290, in learn
+    new_q_value_1 = self.critic_1(states, new_policy_actions)
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 142, in call
+    state_action_value = self.dense_0(tf.concat([state, action], axis=1))
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 59, in error_handler
+    if not tf.debugging.is_traceback_filtering_enabled():
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 32, in is_traceback_filtering_enabled
+    @tf_export('debugging.is_traceback_filtering_enabled')
+KeyboardInterrupt

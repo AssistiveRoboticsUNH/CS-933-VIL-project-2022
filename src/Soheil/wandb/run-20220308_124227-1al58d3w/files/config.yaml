@@ -1,0 +1,43 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.12.11
+    framework: keras
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.2
+    start_time: 1646761347
+    t:
+      1:
+      - 2
+      - 3
+      2:
+      - 2
+      - 3
+      3:
+      - 15
+      - 16
+      4: 3.10.2
+      5: 0.12.11
+      8:
+      - 5
+architecture:
+  desc: null
+  value: SAC
+batch_size:
+  desc: null
+  value: 64
+env:
+  desc: null
+  value: HumanoidBulletEnv-v0
+infra:
+  desc: null
+  value: Colab
+learning_rate_actor:
+  desc: null
+  value: 0.0005
+learning_rate_critic:
+  desc: null
+  value: 0.0005

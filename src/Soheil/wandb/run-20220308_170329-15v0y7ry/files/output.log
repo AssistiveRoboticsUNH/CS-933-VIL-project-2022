@@ -1,0 +1,33 @@
+pybullet build time: Dec 10 2021 16:29:52
+2022-03-08 17:03:31.188473: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.208986: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.209090: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.209385: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 17:03:31.210278: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.210371: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.210435: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.445600: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.445727: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.445854: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 17:03:31.445940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2157 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Ti Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+2022-03-08 17:03:31.446157: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2022-03-08 17:03:31.973185: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+  0%|                                                                          | 0/10 [00:00<?, ?it/s]
+loading weights
+argv[0]=
+argv[0]=
+230929
+
+
+ 70%|██████████████████████████████████████████████▏                   | 7/10 [00:04<00:02,  1.45it/s]
+Traceback (most recent call last):
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 366, in <module>
+    agent.learn()
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 284, in learn
+    self.critic_value.optimizer.apply_gradients(zip(value_critic_gradient, self.critic_value.trainable_variables))
+  File "/usr/lib/python3.10/site-packages/keras/optimizer_v2/optimizer_v2.py", line 665, in apply_gradients
+    apply_state = self._prepare(var_list)
+  File "/usr/lib/python3.10/site-packages/keras/optimizer_v2/optimizer_v2.py", line 944, in _prepare
+    self._prepare_local(var_device, var_dtype, apply_state)
+KeyboardInterrupt

@@ -1,0 +1,164 @@
+argv[0]=
+argv[0]=
+pybullet build time: Dec 10 2021 16:29:52
+2022-03-08 17:43:05.789748: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 17:43:05.790182: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  0%|▎                                                                                                              | 284/100000 [04:04<23:49:56,  1.16it/s]
+Traceback (most recent call last):
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 366, in <module>
+    agent.learn()
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 290, in learn
+    new_q_value_0 = self.critic_0(states, new_policy_actions)
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 143, in call
+    state_action_value = self.dense_0(tf.concat([state, action], axis=1))
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 64, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1096, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 92, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/layers/core/dense.py", line 233, in call
+    outputs = self.activation(outputs)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1082, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/activations.py", line 311, in relu
+    return backend.relu(x, alpha=alpha, max_value=max_value, threshold=threshold)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1082, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/keras/backend.py", line 4956, in relu
+    x = tf.nn.relu(x)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 10524, in relu
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(
+KeyboardInterrupt

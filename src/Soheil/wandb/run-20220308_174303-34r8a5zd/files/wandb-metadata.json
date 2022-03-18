@@ -1,0 +1,22 @@
+{
+    "os": "Linux-5.10.102-1-MANJARO-x86_64-with-glibc2.35",
+    "python": "3.10.2",
+    "heartbeatAt": "2022-03-08T22:43:05.774990",
+    "startedAt": "2022-03-08T22:43:03.977828",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py",
+    "codePath": "src/Soheil/sac.py",
+    "git": {
+        "remote": "git@github.com:AssistiveRoboticsUNH/CS-933-VIL-project-2022.git",
+        "commit": "7dd83b9f7ae1ac847610cc54b30773b868e8be1d"
+    },
+    "email": "soheilred@yahoo.com",
+    "root": "/home/soheil/Sync/unh/courses/hri/project",
+    "host": "lab",
+    "username": "soheil",
+    "executable": "/usr/bin/python"
+}

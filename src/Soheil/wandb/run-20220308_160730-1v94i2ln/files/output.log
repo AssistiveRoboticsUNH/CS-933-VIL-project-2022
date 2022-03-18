@@ -1,0 +1,57 @@
+pybullet build time: Dec 10 2021 16:29:52
+2022-03-08 16:07:32.127034: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.149439: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.149548: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.149916: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE3 SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2022-03-08 16:07:32.150874: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.150962: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.151026: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.396447: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.396564: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.396648: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:936] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2022-03-08 16:07:32.396769: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1525] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 2157 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3050 Ti Laptop GPU, pci bus id: 0000:01:00.0, compute capability: 8.6
+2022-03-08 16:07:32.397204: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+2022-03-08 16:07:32.941047: I tensorflow/stream_executor/cuda/cuda_blas.cc:1786] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+  0%|                                                                        | 0/1000 [00:00<?, ?it/s]
+loading weights
+argv[0]=
+argv[0]=
+230929
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  4%|██▊                                                            | 44/1000 [00:31<11:17,  1.41it/s]
+Traceback (most recent call last):
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 361, in <module>
+    action = agent.get_action(states)
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 260, in get_action
+    actions, _ = self.actor.get_action_log_probs(state, reparameterization_trick=False)
+  File "/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py", line 201, in get_action_log_probs
+    action = tf.math.tanh(actions) * self.upper_bound
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 1406, in binary_op_wrapper
+    return func(x, y, name=name)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 1766, in _mul_dispatch
+    return multiply(x, y, name=name)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/traceback_utils.py", line 150, in error_handler
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/util/dispatch.py", line 1082, in op_dispatch_handler
+    return dispatch_target(*args, **kwargs)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/ops/math_ops.py", line 529, in multiply
+    return gen_math_ops.mul(x, y, name)
+  File "/usr/lib/python3.10/site-packages/tensorflow/python/ops/gen_math_ops.py", line 6576, in mul
+    _result = pywrap_tfe.TFE_Py_FastPathExecute(

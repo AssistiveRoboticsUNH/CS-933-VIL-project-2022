@@ -1,0 +1,123 @@
+2022-03-08 17:43:03,980 INFO    MainThread:1698025 [wandb_setup.py:_flush():75] Loading settings from /home/soheil/.config/wandb/settings
+2022-03-08 17:43:03,980 INFO    MainThread:1698025 [wandb_setup.py:_flush():75] Loading settings from /home/soheil/Sync/unh/courses/hri/project/src/Soheil/wandb/settings
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_setup.py:_flush():75] Loading settings from environment variables: {}
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_setup.py:_flush():75] Inferring run settings from compute environment: {'program_relpath': 'src/Soheil/sac.py', 'program': '/home/soheil/Sync/unh/courses/hri/project/src/Soheil/sac.py'}
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_setup.py:_flush():75] Applying login settings: {'api_key': '***REDACTED***'}
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_init.py:_log_setup():405] Logging user logs to /home/soheil/Sync/unh/courses/hri/project/src/Soheil/wandb/run-20220308_174303-34r8a5zd/logs/debug.log
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_init.py:_log_setup():406] Logging internal logs to /home/soheil/Sync/unh/courses/hri/project/src/Soheil/wandb/run-20220308_174303-34r8a5zd/logs/debug-internal.log
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_init.py:init():439] calling init triggers
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_init.py:init():442] wandb.init called with sweep_config: {}
+config: {'learning_rate_actor': 0.0005, 'learning_rate_critic': 0.0005, 'batch_size': 64, 'architecture': 'SAC', 'infra': 'Colab', 'env': 'HumanoidBulletEnv-v0'}
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [wandb_init.py:init():492] starting backend
+2022-03-08 17:43:03,981 INFO    MainThread:1698025 [backend.py:_multiprocessing_setup():99] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-03-08 17:43:03,996 INFO    MainThread:1698025 [backend.py:ensure_launched():219] starting backend process...
+2022-03-08 17:43:03,999 INFO    MainThread:1698025 [backend.py:ensure_launched():224] started backend process with pid: 1698101
+2022-03-08 17:43:04,001 INFO    MainThread:1698025 [wandb_init.py:init():501] backend started and connected
+2022-03-08 17:43:04,004 INFO    MainThread:1698025 [wandb_init.py:init():565] updated telemetry
+2022-03-08 17:43:04,010 INFO    MainThread:1698025 [wandb_init.py:init():596] communicating run to backend with 30 second timeout
+2022-03-08 17:43:04,706 INFO    MainThread:1698025 [wandb_run.py:_on_init():1759] communicating current version
+2022-03-08 17:43:04,782 INFO    MainThread:1698025 [wandb_run.py:_on_init():1763] got version response 
+2022-03-08 17:43:04,782 INFO    MainThread:1698025 [wandb_init.py:init():625] starting run threads in backend
+2022-03-08 17:43:05,783 INFO    MainThread:1698025 [wandb_run.py:_console_start():1733] atexit reg
+2022-03-08 17:43:05,783 INFO    MainThread:1698025 [wandb_run.py:_redirect():1606] redirect: SettingsConsole.REDIRECT
+2022-03-08 17:43:05,784 INFO    MainThread:1698025 [wandb_run.py:_redirect():1611] Redirecting console.
+2022-03-08 17:43:05,784 INFO    MainThread:1698025 [wandb_run.py:_redirect():1667] Redirects installed.
+2022-03-08 17:43:05,785 INFO    MainThread:1698025 [wandb_init.py:init():664] run started, returning control to user process
+2022-03-08 17:47:10,181 INFO    MainThread:1698025 [wandb_run.py:_atexit_cleanup():1702] got exitcode: 255
+2022-03-08 17:47:10,182 INFO    MainThread:1698025 [wandb_run.py:_restore():1674] restore
+2022-03-08 17:47:12,710 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 737
+  total_bytes: 737
+}
+
+2022-03-08 17:47:12,959 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 737
+  total_bytes: 737
+}
+
+2022-03-08 17:47:13,777 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 2
+}
+pusher_stats {
+  uploaded_bytes: 737
+  total_bytes: 1348
+}
+
+2022-03-08 17:47:13,879 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 737
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:13,980 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 5595
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:14,083 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9106
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:14,185 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9106
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:14,287 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9106
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:14,389 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9106
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:14,492 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9106
+  total_bytes: 9106
+}
+
+2022-03-08 17:47:14,793 INFO    MainThread:1698025 [wandb_run.py:_on_finish():1831] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 5
+}
+pusher_stats {
+  uploaded_bytes: 9106
+  total_bytes: 9106
+}
+local_info {
+}
+
+2022-03-08 17:47:16,075 INFO    MainThread:1698025 [wandb_run.py:_footer_history_summary_info():2865] rendering history
+2022-03-08 17:47:16,075 INFO    MainThread:1698025 [wandb_run.py:_footer_history_summary_info():2894] rendering summary
+2022-03-08 17:47:16,076 INFO    MainThread:1698025 [wandb_run.py:_footer_sync_info():2822] logging synced files
